@@ -1,17 +1,16 @@
-# Informe de datos
+# Data Report
 
-Este documento contiene los resultados del análisis exploratorio de datos.
+This document contains the results from the exploratory data analysis.
 
-## Resumen general de los datos
+## General summary of the data
 
-## Resumen de la calidad de los datos
+## Data quality summary
 
-## Variable objetivo
+## Target variable
 
-## Variables individuales
+## Individual variables
 
-## Clasificación de las variables
+## Variable ranking
 
-## Relación entre las variables explicativas y la variable objetivo
-
+## Relationship between explanatory variables and target variable
 
