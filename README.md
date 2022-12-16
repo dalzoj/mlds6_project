@@ -1,3 +1,8 @@
+## Autores:
+* Diego Alexander Lizarazo Jimenez
+* David Armando Castaneda Vergara
+* Luis Alejandro Duque Cardona
+
 ## HpC para detección del virus de la hepatitis C
 
 HpC: Una aplicación para la detección rápida y económica del virus de la Hepatitis C en muestras de sangre mediante algoritmos de Machine Learning
@@ -10,25 +15,11 @@ Cliente: Hospitales Colombianos y Sistema de Salud Colombiano
 ## DESPLIEGUE
 Para desplegar el modelo se debe descargar el repositorio y luego ejecutar 
 
-1- Tenga paciencia ya que se entrenará aqui el modelo  y guardará la mejor opción para la clasificación, puede tardar unos minutos
+1. Tenga paciencia ya que se entrenará aqui el modelo  y guardará la mejor opción para la clasificación, puede tardar unos minutos
+* `python3 setup.py build`
+* `python3 setup.py install`
+* `pip3 install`
+* `python3 main.py`
   
-  python3 setup.py build  
-  
-  python3 setup.py install 
-  
-  pip3 install 
-  
-  python3 main.py
-  
-2-proceda con streamlit run app.py para desplegarlo
-
-  streamlit run app.py
-
-
-Autores:
-
-Diego Alexander Lizarazo Jimenez
-
-David Armando Castaneda Vergara
-
-Luis Alejandro Duque Cardona
+2. proceda con streamlit run app.py para desplegarlo
+* `streamlit run app.py`
