@@ -1,55 +1,59 @@
-# Carta del proyecto
+## Antecedentes 
+En Colombia, durante el 2016, el Instituto Nacional de Salud reportó 287 casos de los cuales el 56 % correspondieron al sexo masculino y 44 % al femenino. El grupo de edad de mayor afectación fue el de 25 a 29 años (12%). Sin embargo, en todos los grupos de edad mayores de 15 años se reportaron casos; siendo los departamentos con mayor notificación: Atlántico, Valle del Cauca, Norte de Santander y Quindío [2]. Para Colombia, el gasto anual estimado por paciente es de US$ 7.000. El tratamiento de la infección por el virus de la hepatitis C difiere de otras infecciones virales crónicas en la disponibilidad de opciones terapéuticas [3]. El tratamiento de esta enfermedad ha evolucionado rápidamente y dispone actualmente de esquemas terapéuticos que permiten la curación en más del 90 % de las personas infectadas aún con genotipos que eran difíciles de tratar en el pasado [1].
+Teniendo en cuenta el impacto económico que tiene esta enfermedad en el presupuesto de salud nacional se quiere identificar los posibles infectados en donantes de sangre en el menor tiempo posible y evitar expandir el virus. Tambien se requiere encontrar vías rápidas y economicamente viables para su detección.
 
-## Antecedentes empresariales
+* **Ámbito Empresarial**: Salud
+* **Cliente**: Hospital Colombiano y Sistema de Salud Colombiano
 
-# Quién es el cliente, en qué ámbito empresarial se encuentra el cliente.
-## ¿Qué problemas empresariales se pretenden resolver?
 
 ## Alcance
-* ¿Qué soluciones de ciencia de datos estamos tratando de construir?
-* ¿Qué vamos a hacer?
-* ¿Cómo va a ser consumido por el cliente?
+
+
+* **Objetivo**:  Detectar la presencia del virus de la hepatitis C mediante el uso de algoritmos de Machine Learning aplicado sobre bases de datos de donantes de sangre para así validar un método rápido y económico para su detección.
+
+El personal de salud encargado de la detección del virus de la Hepatitis C se le brinda los modelos de ML detección del virus mediante una aplicación que requieran unicamente como entrada los análisis de sangre de los pacientes.
 
 ## Personal
-* ¿Quiénes están en este proyecto?
-	* Empresa a cargo del proyecto:
-		* Jefe de proyecto
-		* PM
-		* Científico(s) de datos
-		* Director de cuentas
-	* Cliente:
-		* Administrador de datos
-		* Contacto con la empresa
+* Machine Learning Engineer
+* Data Scientist
+* Data Engineer
 	
 ## Métricas
-* ¿Cuáles son los objetivos cualitativos? (por ejemplo, reducir la fuga de usuarios)
-* ¿Cuáles son las métricas cuantificables (por ejemplo, reducir la fracción de usuarios con 4 semanas de inactividad)
-* Cuantificar qué mejora de los valores de la métrica es útil para el escenario del cliente (por ejemplo, reducir la fracción de usuarios con inactividad de 4 semanas en un 20%) 
-* ¿Cuál es el valor de referencia (actual) de la métrica? (por ejemplo, fracción actual de usuarios con inactividad de 4 semanas = 60%)
-* ¿Cómo mediremos la métrica? (por ejemplo, prueba A/B en un subconjunto específico durante un periodo determinado; o comparación del rendimiento después de la implementación con la línea de base)
+* Reducir al menos un 50% el costo del diagnóstico de Hepatitis C en pruebas de sangre para el hospital tomado como referencia
+* El modelo será evaluado con la medida más pequeña de Generalización. También se tendrá en cuentra la Efectividad y el Error de dicho modelo.
+* Reducir los costos para la detección de la enfermedad en el sistema de salud colombiano.
+* Reducir la propagación del virus de la Hepatitis C a partir de su detección temprana y rápida.
 
-## Plan
-## Fases (hitos), calendario, breve descripción de lo que haremos en cada fase.
+## Fases
+Se implementará la metodología Team Data Science Process (TDSP)
+1. Conocimiento del negocio
+2. Adquisición y comprensión de los datos
+3. Modelado
+4. Implementación
+5. Aceptación del cliente
+6. Despliegue
 
 ## Arquitectura
-## Datos
-  ## ¿Qué datos esperamos? Datos en bruto en las fuentes de datos del cliente (por ejemplo, archivos on-prem, SQL, Hadoop on-prem, etc.)
-* Movimiento de datos desde on-prem a Azure utilizando ADF u otras herramientas de movimiento de datos (Azcopy, EventHub, etc.) para mover
-  * Todos los datos, 
-  * después de una preagregación en el sistema local,
-  * datos muestreados suficientes para la modelización 
-
-* Qué herramientas y recursos de almacenamiento/análisis de datos se utilizarán en la solución, por ejemplo
-  * ASA para la agregación de flujos
-  * HDI/Hive/R/Python para la construcción de características, agregación y muestreo
-  * AzureML para el modelado y la operacionalización del servicio web
-* ¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.
-  * ¿Cómo utilizará el cliente los resultados del modelo para tomar decisiones?
-  * Canalización del movimiento de datos en producción
-  * Realice un diagrama de 1 diapositiva que muestre el flujo de datos de extremo a extremo y la arquitectura de decisiones
-    * Si hay un cambio sustancial en el flujo de trabajo del negocio del cliente, haga un diagrama antes/después que muestre el flujo de datos.
+* **Datos**: Los datos están almacenando en un archivo .csv que se extrae de muestras de la base de datos del hospital
+* **Herramientas**:
+  * Python
+  * Pandas
+  * Numpy
+  * Matplotlib
+  * Sklearn
 
 ## Comunicación
-* ¿Cómo nos mantendremos en contacto? ¿Reuniones semanales?
-* ¿Quiénes son las personas de contacto de ambas partes?
+* La comunicación se hará en reuniones cada 2 días con evidencia en los avances del proceso según el rol que corresponda con los integrantes.
+* Existe un lider (Data Scientist) que tendrá comunicación directa con el encargado del Hospital en caso de Requerimientos, Avances y Entregas.
 
+
+## Referencias Bibliográficas
+[1] World Health Organization. Guidelines for the screening, care and treatment of persons
+with hepatitis C infection. Geneva: World Health Organization; 2014.
+
+[2] Instituto Nacional de Salud. Boletin epidemiologico - sem 52. Bogotá: Instituto Nacional
+de Salud; 2016. Available from: http://www.ins.gov.co/boletinepidemiologico/Boletn%20Epidemiolgico/2016%20Bolet%C3%ADn%20epidemiol%C3%B3gico
+%20semana%2052%20-.pdf.
+
+[3] Ministerio de Salud. Vía clínica para el tratamiento de hepatitis C crónica
+Versión completa, Marzo del 2017. Available from https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/MET/Via-clinica-para-el-tratamiento-de-la-hepatitis-C.pdf
